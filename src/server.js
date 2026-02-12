@@ -3,6 +3,7 @@ import "dotenv/config";
 import { errorHandler } from "./middlewares/errorMiddleware.js";
 import authRoutes from "./routes/authRoutes.js";
 import taskRoutes from "./routes/taskRoutes.js";
+import logRoutes from "./routes/logRoutes.js";
 import { authenticate } from "./middlewares/authMiddleware.js";
 
 const app = express();
@@ -18,6 +19,7 @@ app.get("/api/protected", authenticate, (req, res) => {
     return res.json({ messgae: "You are authenticated", user: req.user });
 });
 app.use("/api/tasks", taskRoutes);
+app.use("/api/logs", logRoutes);
 
 const PORT = process.env.PORT || 4000;
 app.listen(PORT, () => console.log(`Server running on port: ${PORT}`));
