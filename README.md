@@ -82,3 +82,7 @@ npm run server
 ```
 
 Server will run at: [http://localhost:4000](http://localhost:4000)
+
+Render Deployment Link: [https://regrip-task-backend-1.onrender.com](https://regrip-task-backend-1.onrender.com) 
+
+API Documentation: [Postman Collections](https://.postman.co/workspace/My-Workspace~eea1f211-9b10-4edb-8c9b-f6d6f7f7808c/collection/41006212-1b57deaf-d72e-4f82-abb3-a13cc7b9ff48?action=share&creator=41006212)
